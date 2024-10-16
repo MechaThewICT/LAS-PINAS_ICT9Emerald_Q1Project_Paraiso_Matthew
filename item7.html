@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="item.css">
+    <link rel="icon" type="image/png" href="Untitled design (4).png">
+    <title>Matturday / Item 7</title>
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="index.html">MATTurday.com</a></div>
+            <div class="options">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About M.D</a></li>
+                    <li><a href="index.html">Products</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="product-holder">
+        <img src="Headphones-JBL.png" alt="JBL Tune 510BT Wireless Headphones" style="width: 500px;" class="product-image">
+        <div class="text">
+            <h1>JBL Tune 510BT Wireless Headphones</h1>
+            <p style="margin-top: -20px; margin-left: 10px; font-weight: 100; font-size: 20px;">The JBL Tune 510BT headphones let you stream powerful JBL Pure Bass sound with no strings attached.</p>
+            <h1 class="price">₱2,639.00</h1>
+            <ul>
+                <li>• JBL Pure Bass Sound</li>
+                <li>• Wireless Bluetooth 5.0 Streaming</li>
+                <li>• Up to 40H battery life and speed charge (5mins = 2H)</li>
+                <li>• Multi-point connections</li>
+                <li>• Hands-free calls</li>
+                <li>• Lightweight, comfortable and foldable design</li>
+                <li>• Tune 510BT 1 x USB-C Charging Cable</li>
+                <li>• 1 x Warranty/Warning</li>
+                <li>• Learn more at <a href="https://jblstore.com.ph/products/jbl-tune-510-bt-wireless-headphones-bluetooth-smart-headphones?_pos=11&_sid=3684940ae&_ss=r" style="font-size: 15px;">JBLStore.com</a></li>
+            </ul>
+            <div class="buttons">
+                <form>
+                    <select>
+                        <option>Gcash</option>
+                        <option>PayMaya</option>
+                        <option>Paypal</option>
+                        <option>VISA</option>
+                    </select>
+                </form>
+            <button onclick="alert('Added to cart')">Add to cart</button>
+            <button id="buy" onclick="myFunction()">Buy Now!</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            document.getElementById("buy").innerHTML = "Purchased";
+            alert('Successfully bought item!')
+        }
+    </script>
+</body>
+</html>

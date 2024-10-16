@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="item.css">
+    <link rel="icon" type="image/png" href="Untitled design (4).png">
+    <title>Matturday / Item 8</title>
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="index.html">MATTurday.com</a></div>
+            <div class="options">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About M.D</a></li>
+                    <li><a href="index.html">Products</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="product-holder">
+        <img src="Headphones-QuietComfort 35 wireless headphones II.png" alt="QuietComfort 35 wireless headphones II" style="width: 300px; object-fit: contain; margin-left: 80px; margin-right: 80px;" class="product-image">
+        <div class="text">
+            <h1>QuietComfort 35 wireless headphones II</h1>
+            <p style="margin-top: -20px; margin-left: 10px; font-weight: 100; font-size: 20px;">Engineered with renowned noise cancellation.</p>
+            <h1 class="price">₱16,810.08</h1>
+            <ul>
+                <li>• USB charging cable</li>
+                <li>• 2.5 mm to 3.5 mm audio cable</li>
+                <li>• Carrying case</li>
+                <li>• With Google Assistant and Amazon Alexa built-in</li>
+                <li>• Superior active noise cancellation</li>
+                <li>• 20 hours of estimated battery life</li>
+                <li>• On-ear controls to adjust settings</li>
+                <li>• Learn more at <a href="https://www.bose.com/p/quietcomfort-35-wireless-headphones-ii/QC35II-HEADPHONEARN-SIL-WW.html?msockid=0b5f4079973069a4115e4f1f96ad6882" style="font-size: 15px;">Bose.com</a></li>
+            </ul>
+            <div class="buttons">
+                <form>
+                    <select>
+                        <option>Gcash</option>
+                        <option>PayMaya</option>
+                        <option>Paypal</option>
+                        <option>VISA</option>
+                    </select>
+                </form>
+            <button onclick="alert('Added to cart')">Add to cart</button>
+            <button id="buy" onclick="myFunction()">Buy Now!</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            document.getElementById("buy").innerHTML = "Purchased";
+            alert('Successfully bought item!')
+        }
+    </script>
+</body>
+</html>

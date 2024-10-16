@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="item.css">
+    <link rel="icon" type="image/png" href="Untitled design (4).png">
+    <title>Matturday / Item 5</title>
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="index.html">MATTurday.com</a></div>
+            <div class="options">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About M.D</a></li>
+                    <li><a href="index.html">Products</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="product-holder">
+        <img src="Keyboard-Razer.png" alt="Razer Huntsman V3 Pro " style="width: 500px; object-fit: contain;" class="product-image">
+        <div class="text">
+            <h1>Razer Huntsman V3 Pro</h1>
+            <p style="margin-top: -20px; margin-left: 10px; font-weight: 100; font-size: 20px;">Analog optical keyboard equipped with the ultimate speed of the Rapid Trigger mode and cutting-edge analog optical switches.</p>
+            <h1 class="price">₱14,820.00</h1>
+            <ul>
+                <li>• Equipped with Razer's most advanced switch with rapid trigger</li>
+                <li>• Allows keystrokes at a much faster speed</li>
+                <li>• With adjustable actuation in the range of 0.1-4.0 mm</li>
+                <li>• Adjustable switch sensitivity</li>
+                <li>• Achieved with light actuation pressure</li>
+                <li>• Learn more at <a href="https://www.razer.com/gaming-keyboards/razer-huntsman-v3-pro" style="font-size: 15px;">Razer.com</a></li>
+            </ul>
+            <div class="buttons">
+                <form>
+                    <select>
+                        <option>Gcash</option>
+                        <option>PayMaya</option>
+                        <option>Paypal</option>
+                        <option>VISA</option>
+                    </select>
+                </form>
+            <button onclick="alert('Added to cart')">Add to cart</button>
+            <button id="buy" onclick="myFunction()">Buy Now!</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            document.getElementById("buy").innerHTML = "Purchased";
+            alert('Successfully bought item!')
+        }
+    </script>
+</body>
+</html>

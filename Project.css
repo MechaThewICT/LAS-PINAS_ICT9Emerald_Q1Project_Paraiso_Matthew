@@ -1,0 +1,296 @@
+/*overall html format*/
+html{
+    scroll-behavior: smooth;
+}
+/*font*/
+@font-face {
+    font-family: Pixel;
+    src: url(Monocode-Regular-V01.02b.ttf);
+}
+
+*{
+    text-decoration: none;
+}
+
+body{
+    font-family: Pixel;
+    margin: 0;
+    height: 484vh;
+}
+/* The top page */
+.header{
+    border-top: 30px solid black;
+    background-color: white;
+    font-size: 20px;
+    font-family: pixel;
+    text-align: center;
+    padding: 30px;
+    border-bottom: 5px solid black;
+}
+/* footer */
+.footer-head{
+    background-color: grey;
+    padding: 35px;
+    border-top: 5px solid rgb(83, 83, 83);
+}
+
+.footer-head h1{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.footer-head li{
+    display: block;
+    margin-top: 10px;
+}
+
+.footer-head li a{
+    font-size: 20px;
+    color: rgb(83, 83, 83);
+}
+
+.company-sections{
+    padding-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 5px solid rgb(83, 83, 83);
+}
+
+.myCompanySection{
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-top: 5px solid rgb(83, 83, 83);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.myCompanySection h1{
+    font-size: 30px;
+}
+
+/*Navigation bar*/
+.navbar{
+    background-color: rgba(255, 255, 255);
+}
+
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo a{
+    padding-left: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+li a{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    margin-left: 0px;
+    margin-right: 25px;
+}
+
+button{
+    margin-right: 10px;
+    background-color: black;
+}
+
+button a{
+    font-family: Pixel;
+    color: white;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar li{
+    position: relative;
+    width: max-content;
+}
+
+.navbar li::after{
+    content: '';
+    background: black;
+    border-radius: 100px;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 500ms;
+}
+
+.navbar li:hover::after{
+    width: 75%;
+}
+
+/*sticky navbar_intertwined with Javascript*/
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 0px;
+}
+
+/*animation lines*/
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 15em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(0, 0, 0, 0.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+.line-2{
+    position: relative;
+    top: 50%;  
+    width: 15em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(0, 0, 0, 0.75);
+    font-size: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%); 
+}
+
+/* The "Welcome to MATTurday.com container */
+.first-sec{
+    margin-top: -40px;
+    height: 100vh;
+    border-bottom: 5px solid grey;
+}
+.first-sec h1{
+    font-size: 50px;
+    padding-left: 100px;
+    padding-top: 100px;
+    margin-bottom: -100px;
+}
+/* products */
+.products-section-1{
+    display: flex;
+    padding-left: 70px;
+}
+
+.products-section-2{
+    display: flex;
+    padding-left: 70px;
+}
+
+.products-section-3{
+    display: flex;
+    padding-left: 70px;
+}
+
+/* Product Styles */
+.card-1{
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.75);
+    background-color: rgb(213, 213, 213);
+    margin: 25px;
+    margin-top: 30px;
+    padding-bottom: 70px;
+    width: 28%;
+    border-radius: 15px;
+}
+
+.card-1 img{
+    display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.card-1 h1{
+    text-align: center;
+    width: 340px;
+}
+
+.card-1 p{
+    text-align: center;
+}
+
+.card-2{
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.75);
+    background-color: rgb(213, 213, 213);
+    margin: 25px;
+    margin-top: 30px;
+    padding-bottom: 70px;
+    width: 28%;
+    border-radius: 15px;
+}
+
+.card-2 img{
+    display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+}
+
+.card-2 h1{
+    margin-top: 25px;
+    text-align: center;
+    width: 345px;
+}
+
+.card-2 p{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.card-3{
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.75);
+    background-color: rgb(213, 213, 213);
+    margin: 25px;
+    margin-top: 30px;
+    padding-bottom: 70px;
+    width: 28%;
+    border-radius: 15px;
+}
+
+.card-3 img{
+    display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+width: 340px;
+}
+
+.card-3 h1{
+    margin-top: 35px;
+    text-align: center;
+    width: 345px;
+}
+
+.card-3 p{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.link-sections{
+    display: flex;
+}
+
+.link-sections li a:hover{
+    color: rgb(0, 106, 255);
+}

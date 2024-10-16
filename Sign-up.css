@@ -1,0 +1,110 @@
+/*overall html format*/
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: Pixel;
+    src: url(Monocode-Regular-V01.02b.ttf);
+}
+
+*{
+    text-decoration: none;
+}
+
+.header{
+    border-top: 30px solid black;
+    background-color: white;
+    font-size: 20px;
+    font-family: pixel;
+    text-align: center;
+    padding: 30px;
+    border-bottom: 5px solid black;
+}
+
+body{
+    font-family: Pixel;
+    margin: 0;
+}
+/*Navigation bar*/
+.navbar{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo a{
+    padding-left: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+li a{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+button{
+    margin-right: 10px;
+    background-color: black;
+}
+
+button a{
+    font-family: Pixel;
+    color: white;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*sticky navbar_intertwined with Javascript*/
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 0px;
+}
+
+/*log in*/
+.log-in-tab{
+    text-align: center;
+    font-family: pixel;
+    margin: 60px auto;
+    margin-top: 30px;
+    padding: 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    width: 45%;
+    background-color: rgb(197, 197, 197);
+    box-shadow: 16px 14px 0px 0px rgba(0,0,0,1);
+-webkit-box-shadow: 16px 14px 0px 0px rgba(0,0,0,1);
+-moz-box-shadow: 16px 14px 0px 0px rgba(0,0,0,1);
+}
+.submit{
+    font-family: Pixel;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+input{
+    text-align: center;
+    font-size: 30px;
+    font-family: Pixel;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

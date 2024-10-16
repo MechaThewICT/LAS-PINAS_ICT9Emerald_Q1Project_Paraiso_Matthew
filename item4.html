@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="item.css">
+    <link rel="icon" type="image/png" href="Untitled design (4).png">
+    <title>Matturday / Item 4</title>
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="index.html">MATTurday.com</a></div>
+            <div class="options">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About M.D</a></li>
+                    <li><a href="index.html">Products</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="product-holder">
+        <img src="Keyboard-Dragonic.png" alt="Dragonic Pro Keyboard" style="width: 500px;" class="product-image">
+        <div class="text">
+            <h1>Redragon K530 Draconic 60%</h1>
+            <p style="margin-top: -20px; margin-left: 10px; font-weight: 100; font-size: 20px;">For the best gaming experience</p>
+            <h1 class="price">₱3,009.650</h1>
+            <ul>
+                <li>• 61 keys fully hot-swappable PCB plus original compact 60% layout.</li>
+                <li>• Used for PCs, tablets, and phones</li>
+                <li>• Compatible with all type of mechanical switches</li>
+                <li>• RGB Backlighting</li>
+                <li>• Efficient built-in rechargeable battery</li>
+                <li>• RGB-backlight keyboard</li>
+                <li>• Type C to USB charging cable</li>
+                <li>• Software available for gamer (For Windows system only)</li>
+                <li>• Learn more at <a href="https://shopee.ph/Redragon-K530-RGB-PRO-DRACONIC-60-Wireless-RGB-mechanical-keyboard-i.21380649.17660848515" style="font-size: 15px;">Shopee.com</a></li>
+            </ul>
+            <div class="buttons">
+                <form>
+                    <select>
+                        <option>Gcash</option>
+                        <option>PayMaya</option>
+                        <option>Paypal</option>
+                        <option>VISA</option>
+                    </select>
+                </form>
+            <button onclick="alert('Added to cart')">Add to cart</button>
+            <button id="buy" onclick="myFunction()">Buy Now!</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            document.getElementById("buy").innerHTML = "Purchased";
+            alert('Successfully bought item!')
+        }
+    </script>
+</body>
+</html>

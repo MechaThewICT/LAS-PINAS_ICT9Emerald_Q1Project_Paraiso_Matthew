@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="item.css">
+    <link rel="icon" type="image/png" href="Untitled design (4).png">
+    <title>Matturday / Item 3</title>
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="index.html">MATTurday.com</a></div>
+            <div class="options">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About M.D</a></li>
+                    <li><a href="index.html">Products</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="product-holder">
+        <img src="Razor-laptop.png" alt="Razor Laptop" style="width: 500px; object-fit: contain;" class="product-image">
+        <div class="text">
+            <h1>Razer Blade 14</h1>
+            <p style="margin-top: -20px; margin-left: 10px; font-weight: 100; font-size: 20px;">One of Razer's best laptops!</p>
+            <h1 class="price" style="padding-right: 200px;">₱85,499.00</h1>
+            <ul>
+                <li>• THE MOST PORTABLE RAZER BLADE 0.71 in Thin | 4.05 lbs Light</li>
+                <li>• Up to 8 Hours of Battery</li>
+                <li>• AMD RYZEN™ 9 8945HS PROCESSOR</li>
+                <li>• Up to NVIDIA GeForce RTX 4070 Laptop Graphics</li>
+                <li>• NVIDIA® GEFORCE™ RTX 40 SERIES LAPTOP GPU</li>
+                <li>• 14” QHD+ 240 Hz Display</li>
+                <li>• OPTIMIZED VAPOR CHAMBER COOLING</li>
+                <li>• LEARN MORE at <a href="https://www.razer.com/gaming-laptops/razer-blade-14" style="font-size: 15px;">RAZER.COM</a></li>
+            </ul>
+            <div class="buttons">
+                <form>
+                    <select>
+                        <option>Gcash</option>
+                        <option>PayMaya</option>
+                        <option>Paypal</option>
+                        <option>VISA</option>
+                    </select>
+                </form>
+            <button onclick="alert('Added to cart')">Add to cart</button>
+            <button id="buy" onclick="myFunction()">Buy Now!</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            document.getElementById("buy").innerHTML = "Purchased";
+            alert('Successfully bought item!')
+        }
+    </script>
+</body>
+</html>

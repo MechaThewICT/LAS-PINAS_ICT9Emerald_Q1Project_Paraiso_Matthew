@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Untitled design (4).png">
+    <title>About MATTurday.com</title>
+</head>
+<body>
+    <div class="header">
+        <h1 id="top" style="margin-top: 10px;">Learn about the creation of MATTurday</h1>
+        <br><p>How it came into function</p>
+    </div>
+    <nav id="navbar" class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="index.html">MATTurday.com</a></div>
+            <div class="options">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="index.html">Products</a></li>
+                    <li><button><a href="Log-in.html">Log in</a></button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+    <h1 id="about" style="text-align: center;"><br><br><br><br>About</h1>
+    <div class="wrapper">
+        <img src="Phone Photo.png" style="width: 300px;">
+        <div class="text-box">
+          <h1>The Founder</h1>
+          <p>
+            Message from the founder: <br>"Hello there! I'm <span style="color: blue;">Matthew C. Paraiso</span> and <span style="color: red;">I am the founder of MATTurday.com.</span> I am 13 years old,
+            I was born on October 6, 2010- You know what, I'm not going to mention the rest of the details, I'm here to tell you why I 
+            created this website. The reason I made <span style="color: blue;">this website is to join hardware companies and sell it in one website</span> so that 
+            people can find the best devices for their gaming, working, and studying experience. My goal is to create an 
+            algorithm to see what do customers search majority of their time on MATTurday.com, gain information, and create "for you 
+            devices", kind of like social media algorithms but for shopping. <span style="color: red;">I want customers to have the best experience with the best 
+            hardware.</span>"
+            <br><br>
+          </p>
+        </div>
+      </div>
+      <br>
+      <div class="wrapper">
+        <img src="Untitled design (4).png" style="width: 300px; border: 5px solid;">
+        <div class="text-box">
+          <h1>About the Company</h1>
+          <div class="company-list">
+          <ol>
+            <li>The website was <strong><em>programmed on August 28, 2024</em></strong></li>
+            <li>We offer <strong><em>the best products for the best experience</em></strong></li>
+            <li>This <strong><em>wasn't the first version of MATTurday.</em></strong>
+            <br>- The first version was <strong><em>originally a portfolio about the founder.</em></strong></li>
+            <li>This website is the <strong><em>first Paraiso Website Project ever.</em></strong></li>
+            <li>This website <strong><em>started as an ICT Project</em></strong></li>
+          </ol>
+          </div>
+          <br><br><br>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript -->
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.scrollY >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
+</body>
+</html>

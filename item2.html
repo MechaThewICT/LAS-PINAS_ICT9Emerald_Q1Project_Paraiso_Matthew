@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="item.css">
+    <link rel="icon" type="image/png" href="Untitled design (4).png">
+    <title>Matturday / Item 2</title>
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="index.html">MATTurday.com</a></div>
+            <div class="options">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About M.D</a></li>
+                    <li><a href="index.html">Products</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="product-holder">
+        <img src="Lenovo-laptop.png" alt="ThinkPad Laptop" style="width: 500px; object-fit: contain;" class="product-image">
+        <div class="text">
+            <h1>ThinkPad X1 Carbon G11</h1>
+            <p style="margin-top: -20px; margin-left: 10px; font-weight: 100; font-size: 20px;">Recommended for students and workers for better organization</p>
+            <h1 class="price" style="padding-right: 200px;">₱119,702.43</h1>
+            <ul>
+                <li>• Certified Intel®Evo™ with up to 13th Gen Intel®Core™ vPro®CPU</li>
+                <li>• Ultralight starting weight of just 1.12kg / 2.48lb</li>
+                <li>• Super-responsive with twice the memory as previous gen</li>
+                <li>• Optimized thermals with dual fan & rear venting</li>
+                <li>• 4 x 360-degree mics with AI-based noise cancellation & Dolby Voice®</li>
+                <li>• Robust security & MIL-SPEC testing for durability</li>
+                <li>• Learn more at <a href="https://www.lenovo.com/ph/en/p/laptops/thinkpad/thinkpadx1/thinkpad-x1-carbon-gen-11-14-inch-intel/21hm008dph" style="font-size: 15px;">Lenovo.com</a></li>
+            </ul>
+            <div class="buttons">
+                <form>
+                    <select>
+                        <option>Gcash</option>
+                        <option>PayMaya</option>
+                        <option>Paypal</option>
+                        <option>VISA</option>
+                    </select>
+                </form>
+            <button onclick="alert('Added to cart')">Add to cart</button>
+            <button id="buy" onclick="myFunction()">Buy Now!</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            document.getElementById("buy").innerHTML = "Purchased";
+            alert('Successfully bought item!')
+        }
+    </script>
+</body>
+</html>
